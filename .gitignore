@@ -1,3 +1,14 @@
 *.exp
 *.exe
 *.lib
+
+# common default output
+a.out
+
+# object files
+*.o
+
+# common build folders
+build/
+bin/
+out/
