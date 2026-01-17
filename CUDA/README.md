@@ -169,7 +169,7 @@ nvcc -I./include -O2 src/main.cu src/cube_renderer.cu -o cube_renderer.exe
 
 ## Running Programs
 
-```bash
+```bash  
 # Basic examples
 .\HelloWorld.exe
 .\vectorAdd.exe
@@ -245,10 +245,13 @@ CPU better for:
 ## Compilation ( RTX 3060 )
 All programs compiled with NVCC 13.1
 
-#### Build
-mkdir build
-nvcc -odir build <name>.cu -o build/<name> 
+### Build
+```bash
+- mkdir build
+- nvcc -odir build FILENAME.cu -o build/FILENAME 
+```
 
 ### Run
-./build/<name> 
-
+```bash
+./build/FILENAME
+```
