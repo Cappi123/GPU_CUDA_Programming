@@ -143,7 +143,7 @@ Interactive 3D cube renderer and GPU/CPU performance benchmark suite.
 - Visualizes performance scaling characteristics
 - Includes throughput metrics (FPS, vertices/second)
 
-## Compilation
+## Compilation ( GTX 1050 Ti )
 
 All programs compiled with NVCC 12.4:
 
@@ -242,6 +242,13 @@ CPU better for:
 - Large datasets (>10,000 cubes): GPU 10-50x faster
 
 
+## Compilation ( RTX 3060 )
+All programs compiled with NVCC 13.1
 
+#### Build
+mkdir build
+nvcc -odir build <name>.cu -o build/<name> 
 
+### Run
+./build/<name> 
 
